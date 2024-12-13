@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Azar - Associate Software Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: "Poppins", sans-serif;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80px;
+        background-color: rgb(18, 18, 64);
+      }
+
+      nav ul {
+        display: flex;
+        justify-content: center;
+      }
+
+      nav ul li {
+        list-style: none;
+        margin: 0 23px;
+      }
+
+      nav ul li a {
+        text-decoration: none;
+        color: white;
+      }
+
+      nav ul li a:hover {
+        color: lavender;
+        font-size: 1.02rem;
+      }
+
+      main hr {
+        border: 0;
+        background: rgb(209, 228, 226);
+        height: 1.2px;
+        margin: 60px 84px;
+      }
+
+      .left {
+        font-size: 1.5rem;
+      }
+
+      .firstSection {
+        display: flex;
+        justify-content: space-around;
+        align-content: center;
+        margin: 130px 0;
+      }
+
+      .firstSection > div {
+        width: 40%;
+      }
+
+      .leftSection {
+        font-size: 3rem;
+      }
+
+      .rightSection img {
+        width: 80%;
+      }
+
+      .purple {
+        color: rgb(170, 107, 228);
+      }
+
+      .text-gray {
+        color: gray;
+      }
+
+      #element {
+        color: rgb(170, 107, 228);
+      }
+
+      .about-section {
+        margin: 50px 80px;
+        text-align: center;
+      }
+
+      .secondSection {
+        max-width: 80vw;
+        margin: auto;
+        padding-bottom: 50px;
+      }
+
+      .secondSection h1 {
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+
+      .timeline {
+        position: relative;
+        padding: 0;
+        list-style: none;
+        margin: 0 auto;
+      }
+
+      .timeline:before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: rgb(170, 107, 228);
+        transform: translateX(-50%);
+      }
+
+      .timeline-item {
+        position: relative;
+        width: 50%;
+        padding: 20px;
+        text-align: left;
+      }
+
+      .timeline-item:nth-child(even) {
+        left: 50%;
+        text-align: left;
+      }
+
+      .timeline-item:nth-child(odd) {
+        left: 0;
+        text-align: right;
+      }
+
+      .timeline-item .content {
+        background: rgb(18, 18, 64);
+        padding: 20px;
+        border-radius: 6px;
+        position: relative;
+      }
+
+      .timeline-item:nth-child(odd) .content {
+        float: right;
+      }
+
+      .timeline-item:nth-child(even) .content {
+        float: left;
+      }
+
+      .timeline-item .title {
+        font-size: 1.2rem;
+        color: rgb(170, 107, 228);
+      }
+
+      .timeline-item .description {
+        font-size: 0.9rem;
+        color: gray;
+        margin-top: 10px;
+      }
+
+      .timeline-item .year {
+        font-size: 1rem;
+        color: white;
+        margin-top: 10px;
+      }
+
+      .contact-section {
+        margin: 50px 80px;
+        text-align: center;
+      }
+
+      .contact-section a {
+        color: rgb(170, 107, 228);
+        text-decoration: none;
+      }
+
+      .contact-section p {
+        margin: 10px 0;
+        font-size: 1rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <div class="left">Azar's Portfolio</div>
+        <div class="right">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          Hi, My name is <span class="purple">Azar</span>
+          <div>and I am a passionate</div>
+          <span id="element"></span>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="Background Image" />
+        </div>
+      </section>
+      <hr />
+      <section id="about" class="about-section">
+        <h1>About Me</h1>
+        <p>
+          I am an experienced software engineer with expertise in Python development,
+          backend engineering, and DevOps practices. My journey started with
+          foundational programming and has grown into building robust,
+          scalable, and secure software solutions. I am passionate about
+          problem-solving and continuous learning to enhance user experience
+          and operational efficiency.
+        </p>
+      </section>
+      <hr />
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>Work Experience</h1>
+        <ul class="timeline">
+          <li class="timeline-item">
+            <div class="content">
+              <div class="title">Associate Software Engineer</div>
+              <div class="year">2020-2021</div>
+              <div class="description">
+                Worked on foundational software engineering projects, focusing on writing clean, efficient code and collaborating in agile development environments. Gained experience in debugging and optimizing application performance.
+              </div>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="content">
+              <div class="title">Python Developer</div>
+              <div class="year">2021-2022</div>
+              <div class="description">
+                Specialized in backend development using Python frameworks like Django and Flask. Designed and implemented RESTful APIs and integrated them with responsive front-end systems for seamless user experiences.
+              </div>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="content">
+              <div class="title">DevOps Engineer</div>
+              <div class="year">2022-Present</div>
+              <div class="description">
+                Leading efforts in CI/CD pipeline implementation, container orchestration with Docker and Kubernetes, and infrastructure automation using Terraform and Ansible. Ensuring reliable and scalable deployments in multi-cloud environments.
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section id="contact" class="contact-section">
+        <h1>Contact Me</h1>
+        <p>Email: <a href="mailto:azars.codes@gmail.com">azars.codes@gmail.com</a></p>
+        <p>Phone: <a href="tel:+917899035306">+91 7899035306</a></p>
+      </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      // Typed.js Functionality
+      var typed = new Typed("#element", {
+        strings: ["Associate Software Engineer", "Python Developer", "DevOps Engineer"],
+        typeSpeed: 55,
+        backSpeed: 40,
+        loop: true,
+      });
+
+      // Additional Functionality - Smooth Scroll
+      document.querySelectorAll("nav ul li a").forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute("href").substring(1);
+          const targetSection = document.getElementById(targetId);
+          if (targetSection) {
+            targetSection.scrollIntoView({ behavior: "smooth" });
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
